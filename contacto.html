@@ -44,53 +44,63 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>Contacto</h2>
-        <h2>Formualario</h2>
+    <main class="direcMapa">
+        <form class="formulario" action="">
+            <legend>Dejanos tu consulta</legend>
 
-        <form action="consulta.html">
-            <!-- componenete -->
-            <label for="nombre">Nombre</label>
-
-            <input type="text" placeholder="Nombres" maxlength="20" value="lucho"> <br> <br>
-
-            <label for="mail">Mail</label>
-            <input type="email"> <br><br>
-
-            <input type="checkbox" name="clase">Torso
-            <input type="checkbox" name="clase">Piernas
-            <input type="checkbox" name="clase">Cabeza
-            <input type="checkbox" name="clase">Pies
-            <input type="checkbox" name="clase">Accesorios<br><br>
-
-            <label for="consulta">Consulta</label>
-            <textarea rows="20" cols="60"></textarea><br><br>
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar"><br><br>
-
-
+            <br>
+            <div>
+                <label for="Name">* Nombre</label>
+                <input type="text" name="Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="Lastname">Apellido</label>
+                <input type="text" name="Lastname">
+            </div>
+            <br>
+            <div>
+                <label for="mail">* E-Mail</label>
+                <input type="text" name="Mail" required>
+            </div>
+            <br>
+            <div>
+                <label for="civil">Tema de interes:</label>
+                <input type="radio" value="Hardware" name="civil">Piel
+                <input type="radio" value="Software" name="civil">Uñas
+                <input type="radio" value="otra" name="civil"> Otro
+            </div>
+            <br>
+            <fieldset>
+                <div>
+                    <label for="comentario">* Detalle de la consulta</label><br>
+                    <textarea name="coment" id="consulta" required></textarea>
+                    <div class="enviarForm">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </div>
+                </div>
+            </fieldset>
         </form>
-
-        <h2 class="section_title">Consejos</h2>
-        <div class="consejos">
-            <div class="video">
-                <iframe class="video_unias" src="https://www.youtube.com/embed/bw0fwI9x7vg?si=aXU5YtYGwS0fyrP6"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="ubicacion">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.102735810449!2d-58.377758073145046!3d-34.60156355738625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbcb8faf9cfd%3A0xa2fe32fe5e1e45cf!2zR2FsZXLDrWEgSmFyZMOtbg!5e0!3m2!1ses-419!2sar!4v1730676670185!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="banner">
-                <img src="media/pics/qr.png" alt="qr">
+            <div class="direccion">
+                <p>Av. Galadriel 1568 AC</p>
+                <p>📞 5555-5555</p>
+                <a href=mailto:contacto@beautyclub.com.ar>📨contacto@beautyclub.com.ar</a>
             </div>
-        </div>
+        </section>
     </main>
-
     <footer>
         <div class="dire">
             <h6>&copy Jorge Luis Grimalt 2024</h6>
             <h6>Todos los derechos reservados</h6>
-            <p>📞 Teléfono 55555555 </p>
+            <p>📞 Teléfono 5555-5555 </p>
             <a class="e-mail" href=mailto:contacto@beautyclub.com.ar>📨contacto@beautyclub.com.ar</a>
             <p>🏢 Av. Galadriel 1568 AC</p>
         </div>
