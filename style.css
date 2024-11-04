@@ -157,19 +157,20 @@ footer {
 }
 
 footer h6 {
-  font-size: 12px;
+  font-size: 15px;
   font-family: "Orbitron", sans-serif;
-  color: #d6d9da;
+  color: #eaecec;
 }
 
 footer p {
   margin: 2px;
-  color: whitesmoke;
+  color: rgb(48, 47, 47);
 }
 
 footer a {
   text-shadow: none;
   color: whitesmoke;
+  text-decoration: none;
 }
 
 .direcMapa {
@@ -241,3 +242,100 @@ iframe {
   height: 400px;
   border-radius: 15px;
 }
+
+.recomendaciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat (3, 1fr);
+  grid-template-areas: "reco1 reco1 reco2" "reco3 reco4 reco4" "reco3 reco5 reco6";
+  flex-direction: row;
+  justify-content: center;
+}
+
+.recomendaciones div {
+  margin: 20px;
+  padding: 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  justify-self: center;
+  text-shadow: 2px 2px 2px rgb(29, 27, 27);
+  color: rgba(255, 255, 255, 0.973);
+}
+.reco1 {
+  grid-area: reco1;
+  background-image: url(media/pics/limpias.jpg);
+  background-size: cover;
+}
+.reco2 {
+  grid-area: reco2;
+  color: rgb(41, 40, 40);
+  background-color: #05050511;
+  text-shadow: none;
+}
+.reco3 {
+  grid-area: reco3;
+  height: auto;
+  background-image: url(media/pics/lima.jpg);
+  background-size: cover;
+
+}
+.reco4 {
+  grid-area: reco4;
+  color: rgb(8, 8, 8);
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  background-image: url(media/pics/hidratada.jpg);
+  background-size: cover;
+}
+.reco5 {
+  grid-area: reco5;
+  color: rgb(41, 40, 40);
+  background-color: #05050511;
+  text-shadow: none;
+}
+.reco6 {
+  grid-area: reco6;
+  background-image: url(media/pics/arena.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.tendencias {
+  display: flex;
+  justify-content: center;
+}
+
+.tend{
+  width: 80%;
+
+
+}
+
+.tendencias2024{
+  margin-bottom: 100px;
+  display: flex;  
+  flex-flow: row wrap;
+  text-align: center;
+  height: min-content;
+}
+
+.tendencia_img{
+  padding: 20px;
+  width: 50%;
+  height: 300px;
+}
+ .tendencia_img img{
+  border-radius: 15px;
+
+ }
+
+.tendencia_desc{
+  padding: 20px;
+  width: 50%;
+  height: 300px;
+}
+
+
