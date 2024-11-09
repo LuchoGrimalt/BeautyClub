@@ -34,18 +34,18 @@ header video {
 }
 
 .titulo_imagen {
-  width: 120px;
-  margin-left: 30px;
+  width: 100px;
+  margin-left: 20px;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: -0.3rem;
   margin-top: -38px;
 }
 
 .subtitulo {
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 5px;
   font-weight: 400;
   text-align: end;
@@ -55,21 +55,17 @@ h1 {
 .eslogan {
   font-family: "Quicksand";
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  color: white;
+  align-items: end;
 }
 
 nav {
-  margin: 20px;
   text-align: center;
   font-family: "Montserrat";
-  font-size: 1.3rem;
+  font-size: 1rem;
   letter-spacing: 5px;
   background: url(media/videos/video.mp4);
-}
-
-.eslogan {
-  color: white;
-  align-items: end;
 }
 
 nav ul li {
@@ -78,7 +74,7 @@ nav ul li {
 }
 
 nav a {
-  color: rgb(39, 39, 39);
+  color: rgb(30, 30, 30);
   font-family: Montserrat;
   text-decoration: none;
 }
@@ -100,8 +96,8 @@ nav a {
 
 .article {
   flex-flow: row wrap;
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: 400px;
   margin: 10px;
   padding: 10px;
   color: rgb(95, 90, 61);
@@ -116,8 +112,8 @@ nav a {
 }
 
 .article img {
-  width: 380px;
-  height: 380px;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -127,19 +123,19 @@ nav a {
 
 .consejos {
   width: 100%;
-  height: 450px;
   display: flex;
   align-items: center;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .consejos iframe {
-  width: 900px;
-  height: 450;
+  width: 400px;
+  height: 250;
 }
-.consejos banner {
-  width: 900px;
-  height: 450;
+.banner img {
+  width: 500px;
+  height: 250;
 }
 
 footer {
@@ -181,8 +177,8 @@ footer a {
 }
 
 .formulario {
-  width: fit-content;
-  height: 550px;
+  width: 450px;
+  height: auto;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -192,14 +188,14 @@ footer a {
   color: rgb(255, 255, 255);
 }
 fieldset{
-  border: solid 5px white;
+  border: solid 3px white;
   border-radius: 15px;
-  padding: 10px;
+  padding: 7px;
 }
 
 textarea {
   margin: 10px;
-  width: 460px;
+  width: 380px;
   height: 150px;
   resize: vertical;
   border-radius: 15px;
