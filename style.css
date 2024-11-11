@@ -38,7 +38,7 @@ header video {
   margin-left: 20px;
 }
 
-h1 {
+.titulo_texto {
   font-size: 4rem;
   letter-spacing: -0.3rem;
   margin-top: -38px;
@@ -139,17 +139,18 @@ nav a {
 }
 
 footer {
-  height: 260px;
+  height: 200px;
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #b4b0b0;
 }
 
 .dire {
   font-size: 20px;
+  text-align: center;
 }
 
 footer h6 {
@@ -157,7 +158,6 @@ footer h6 {
   font-family: "Orbitron", sans-serif;
   color: #eaecec;
 }
-
 footer p {
   margin: 2px;
   color: rgb(48, 47, 47);
@@ -177,10 +177,10 @@ footer a {
 }
 
 .formulario {
-  width: 450px;
+  width: 440px;
   height: auto;
   padding: 20px;
-  margin: 10px;
+  margin: 5px;
   border-radius: 10px;
   background-color: #4a999b;
   text-indent: 30px;
@@ -300,35 +300,48 @@ iframe {
 .tendencias {
   display: flex;
   justify-content: center;
-}
-
-.tend {
-  width: 95%;
+  padding: 60px;
 }
 
 .tendencias2024 {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   display: flex;
   flex-flow: row wrap;
   text-align: center;
-  height: min-content;
-}
-
-.tendencia_img {
-  width: 60%;
-}
-
-.tendencia_img img {
-  border-radius: 15px;
-  width: 500px;
 }
 
 .tendencia_desc {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  padding: 4px;
-  width: 40%;
+  padding: 30px;
+  width: 50%;
+}
+
+.tend{
+  width: 50%;
+  height: 350px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.p1{
+  background-image: url(media/pics/skinimialista.jpg);
+}
+.p2{
+  background-image: url(media/pics/primers.jpg);
+}
+.p3{
+  background-image: url(media/pics/hidratada.jpg);
+}
+.p4{
+  background-image: url(media/pics/aceite.jpg);
+}
+.qr{
+  width: 450px;
+  height: 250px;
+  background-image: url(media/pics/qr.png);  
+  background-size: cover;           
 }
 
 @media screen and (max-width: 960px) {
@@ -342,6 +355,64 @@ iframe {
     flex-direction: column;
   }
   footer {
+    height: auto;
     flex-direction: column;
+  }
+  .recomendaciones {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  header {
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+  .titulo_imagen {
+    width: 80px;
+    margin-bottom: 6px;
+  }
+  .titulo_texto {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  .subtitulo {
+    font-size: 12px;
+  }
+  .redes img {
+    width: 40px;
+  }
+  .direcMapa {
+    flex-direction: column;
+    margin: 2px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  footer .redes {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .extras {
+    text-align: center;
+  }
+  .tendencia {
+    padding: 2px;
+  }
+  .tendencias2024{
+    margin: 2px;
+    flex-direction: column;
+  }
+  .tend{
+    width: 100%;
+  }
+  .tendencia_desc{
+    width: 100%;
+  }
+  .qr{
+    width: 440px;
+    margin: 5px;
   }
 }
