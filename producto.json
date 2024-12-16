@@ -1,0 +1,6 @@
+productos{
+    prodID = 001;
+    prodNombre = box1;
+    prodPrice = 60000;
+    prodDescription
+}

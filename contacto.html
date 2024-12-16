@@ -50,34 +50,34 @@
 
             <br>
             <div>
-                <label for="Name">* Nombre</label>
-                <input type="text" name="Name" required>
+                <label >* Nombre</label>
+                <input id="nameUsu" type="text" name="Name" required>
             </div>
             <br>
             <div>
-                <label for="Lastname">Apellido</label>
-                <input type="text" name="Lastname">
+                <label >Apellido</label>
+                <input id="lastnameUsu" type="text" name="Lastname">
             </div>
             <br>
             <div>
-                <label for="mail">* E-Mail</label>
-                <input type="text" name="Mail" required>
+                <label >* E-Mail</label>
+                <input id="mailUsu" type="text" name="Mail" required>
             </div>
             <br>
             <div>
                 <label for="civil">Tema de interes:</label>
-                <input type="radio" value="Hardware" name="civil">Piel
-                <input type="radio" value="Software" name="civil">Uñas
-                <input type="radio" value="otra" name="civil"> Otro
+                <input class="interes" type="radio" value="piel" name="civil">Piel
+                <input class="interes" type="radio" value="unias" name="civil">Uñas
+                <input class="interes" type="radio" value="otro" name="civil"> Otro
             </div>
             <br>
             <fieldset>
                 <div>
                     <label for="comentario">* Detalle de la consulta</label><br>
-                    <textarea name="coment" id="consulta" required></textarea>
+                    <textarea id="consultaUsu" name="coment" id="consulta" required></textarea>
                     <div class="enviarForm">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+                        <input id="sendUsu" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Borrar">
                     </div>
                 </div>
             </fieldset>
@@ -123,6 +123,9 @@
             <h6>Todos los derechos reservados</h6>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
